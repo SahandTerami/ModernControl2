@@ -48,12 +48,13 @@ It is assumed that the initial condition vector, the disturbance input vector, a
 ## 🛠️ Project 2
 **Description:**  
 
-This system models the quarter-car vibration as shown in the figure. The input to the system is the force U(t), and the output is the displacement 𝑥1(𝑡).
+The Figure shows a two-degree-of-freedom model of a quarter-car active suspension system.
 
-<img width="479" height="355" alt="image" src="https://github.com/user-attachments/assets/37db7433-9b1a-463d-a746-a0442c0dafab" />
+<img width="557" height="387" alt="image" src="https://github.com/user-attachments/assets/3900c776-0612-4bd2-83fb-fb11829b9d02" />
 
-- `a:` Find the transfer function between the input u and the output y = x1
-- `b:` To simulate the open-loop behavior of the system, obtain and plot the state variables’ responses considering non-zero initial conditions.
-- `c:` Investigate which classical controllers (P-action, PI-action, or PID-action) can be applied to the system to satisfy the controller design requirements. Implement each controller that is feasible for the system.
-- `d:` Investigate whether an advanced state vector feedback controller (SVFC) can be designed for the system. If yes, design and implement such a controller that meets the specified requirements.
-- `e:` Design a continuous-time full-state observer to estimate the system’s state variables and demonstrate that the estimation performs correctly.
+
+- `a:` Design a linear quadratic optimal controller for this system that minimizes the following cost function.
+- `b:` Simulate the behavior of the optimal control system in MATLAB and plot all state variables, inputs, and outputs as functions of time.
+- `c:` Simulate the passive suspension system and plot the system’s state variables over time. Determine the peak response values and the settling time.
+- `d:` Simulate the active suspension system and plot the system’s state variables over time. Determine the peak response values and settling time. 
+- `e:` Design a Kalman filter estimator for the passive suspension system, then simulate the system and plot the state variables over time.
